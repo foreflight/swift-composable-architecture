@@ -373,9 +373,7 @@ public struct _StoreBindable_SwiftUI<State: ObservableState, Action, Value> {
 @available(visionOS, unavailable)
 @dynamicMemberLookup
 public struct _StoreBindable_Perception<State: ObservableState, Action, Value> {
-  #if !os(visionOS)
   fileprivate let bindable: Perception.Bindable<Store<State, Action>>
-  #endif
   fileprivate let keyPath: KeyPath<State, Value>
 
 
